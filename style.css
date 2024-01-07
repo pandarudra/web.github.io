@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#nav{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    justify-content:space-evenly;
+    background: rgb(195, 233, 28);
+   
+}
+
+.nav-redirect{
+    text-transform: capitalize;
+    text-decoration:none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    
+}
+.nav-redirect:hover{
+    color: blue;
+    text-shadow: 50%;
+}
+.left{
+    display: flex;
+    justify-content: center;
+}
+.right{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+.redirects{
+    margin: 10px;
+    padding-inline-start: 10px; 
+}
+.magnify{
+    border: none;
+    background: transparent;
+}
+.magnify:hover{
+    color: blue;
+    text-shadow: 50%;
+}
+.main-one{
+    position: relative;
+    top: 40px;
+    display: flex;
+justify-content: space-between;
+width: 100%;
+height: 500px;
+background-color: rgb(15, 10, 10);
+}
+.left-main{
+    border:2px solid transparent;
+    height: 400px;
+    width: 600px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    
+    font-size: 50px;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right-main{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+    right: 50px;
+    height: 400px;
+    width: 600px;
+    border: 2px solid transparent;
+    background-image: url("main.jpg");
+    background-size: cover;
+    box-shadow: 20px 20px 100px rebeccapurple ;
+    
+    
+}
+.left-main-text{
+    font-weight: bold;
+    font-size: 30px;
+    color: aliceblue;
+    animation: maintxt 1s infinite;
+    text-shadow : 20% 20%;;
+    background-image:url("galaxy-main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 50px;
+    padding: 10px;
+    border-radius:20px;
+    text-align: center;
+    box-shadow: 30px 30px 200px rgba(191, 194, 55,1) ;
+}
+@keyframes maintxt{
+    from{
+        color:rgb(116, 211, 152);
+        
+    }
+    to{
+        color:rgb(172, 24, 159);
+    }
+}
+.left-main-gone{
+    color: aliceblue;
+    text-transform:uppercase;
+    font-weight:bolder;
+    animation: gon 1ms infinite;
+    text-shadow:2px 2px 10px red;
+}
+@keyframes gon {
+    from{
+        color:rgb(73, 62, 226);
+        
+    }
+    to{
+        color:rgb(218, 205, 22);
+    }
+}
+footer{
+    position:fixed;
+    bottom: 0px;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(10, 1, 1);
+    
+}
+.copyright{
+    height: fit-content;
+    width: 100%;
+    position:absolute;
+    bottom:10px;
+}
+.copyright-text{
+    color: beige;
+    font-size:10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
